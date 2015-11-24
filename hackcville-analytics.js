@@ -8,12 +8,22 @@ if (Meteor.isClient) {
       // Prevent default browser form submit
       event.preventDefault();
  
-      // Get value from form element
-      var text = event.target.text.value;
+      // Get values from form elements
+      var name = event.target.name.value;
+      var email = event.target.email.value;
+      var gradYear = event.target.email.gradYear;
+      var major = event.target.email.major;
+      var referralMethod = event.target.referralMethod.value;
+
+      // TODO: Haven't decided how to capture "first time" event attendance yet...
  
-      // Insert a task into the collection
-      Tasks.insert({
-        text: text,
+      // Insert a person into the collection
+      People.insert({
+        name: name,
+        email: email,
+        gradYear: gradYear,
+        major: major,
+        referralMethod: referralMethod,
         createdAt: new Date() // current time
       });
  
