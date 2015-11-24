@@ -11,8 +11,8 @@ if (Meteor.isClient) {
       // Get values from form elements
       var name = event.target.name.value;
       var email = event.target.email.value;
-      var gradYear = event.target.email.gradYear;
-      var major = event.target.email.major;
+      var gradYear = event.target.gradYear.value;
+      var major = event.target.major.value;
       var referralMethod = event.target.referralMethod.value;
 
       // TODO: Haven't decided how to capture "first time" event attendance yet...
@@ -28,7 +28,9 @@ if (Meteor.isClient) {
       });
  
       // Clear form
-      event.target.text.value = "";
+      event.target.name.value = "";
+      event.target.email.value = "";
+      event.target.major.value = "";
     }
   });
 }
