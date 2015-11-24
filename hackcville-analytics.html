@@ -1,0 +1,56 @@
+<head>
+  <title>HackCville Event Sign-in</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <header>
+      <h1>HackCville Event Sign-in</h1>
+      <p>Thanks for coming!</p>
+      <p style="color:red">* Required</p>
+    </header>
+    <form class="student-event-signin">
+      <div class="question">
+        <p>What's your full name? <a style="color:red">*</a></p>
+        <input type="text" name="text" placeholder="Name" />
+      </div>
+
+      <div class="question">
+        <p>What's your email address? <a style="color:red">*</a></p>
+        <input type="text" name="text" placeholder="sample@example.com" />
+      </div>
+
+      <div class="question">
+        <p>What's your graduating year? <a style="color:red">*</a></p>
+        <input type="radio" name="grad-year" value="2019" checked>2019<br>
+        <input type="radio" name="grad-year" value="2018">2018<br>
+        <input type="radio" name="grad-year" value="2017">2017<br>
+        <input type="radio" name="grad-year" value="2016">2016<br>
+        <input type="radio" name="grad-year" value="grad_student">Grad Student<br>
+        <input type="radio" name="grad-year" value="other">Other: <input type="text" name="other"><br>
+      </div>
+
+      <div class="question">
+        <p>What's your major? <a style="color:red">*</a></p>
+        <p>If computer science, please specify E School or College</p>
+        <input type="text" name="text" placeholder="Major" />
+      </div>
+
+      <div class="question">
+        <p>How did you hear about this event? <a style="color:red">*</a></p>
+        <input type="radio" name="referral-method" value="facebook" checked>Facebook<br>
+        <input type="radio" name="referral-method" value="newsletter">HackCville Newsletter<br>
+        <input type="radio" name="referral-method" value="friend">Friend<br>
+        <input type="radio" name="referral-method" value="website">Website<br>
+        <input type="radio" name="referral-method" value="other">Other: <input type="text" name="other"><br>
+      </div>
+
+      <div class="question">
+        <p>Is this your first time at a HackCville event?</p>
+        <input type="checkbox" name="first-time" value="first-time">Yeah!<br>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
